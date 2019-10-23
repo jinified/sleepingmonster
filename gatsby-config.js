@@ -31,10 +31,10 @@ const gatsbyRemarkPlugins = [
 
 module.exports = {
   siteMetadata: {
-    title: 'TypeScript Gatsby Starter',
-    author: 'Luís Rodrigues',
-    description: 'A Gatsby starter using TypeScript.',
-    siteUrl: 'https://goblindegook-gatsby-starter-typescript.netlify.com'
+    title: 'Sleeping Monster',
+    author: 'Jin',
+    description: 'Personal blog about tech, life and everything in my mind',
+    siteUrl: 'https://sleepingmonster.netlify.com'
   },
   plugins: [
     'gatsby-plugin-typescript',
@@ -58,7 +58,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {
-        color: '#ff5700',
+        color: '#fc4445',
         showSpinner: false
       }
     },
@@ -162,7 +162,7 @@ module.exports = {
         short_name: 'GatsbyTS',
         start_url: '/',
         background_color: '#f7f0eb',
-        theme_color: '#a2466c',
+        theme_color: '#fc445a',
         display: 'minimal-ui',
         icons: [
           {
@@ -170,12 +170,12 @@ module.exports = {
             // directory in /public during development and build, so
             // assuming your favicons are in /static/favicon,
             // you can reference them here
-            src: '/favicon/192.png',
+            src: '/favicon/icon192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: '/favicon/512.png',
+            src: '/favicon/icon512.png',
             sizes: '512x512',
             type: 'image/png'
           }

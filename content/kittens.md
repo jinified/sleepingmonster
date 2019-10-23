@@ -1,5 +1,5 @@
 ---
-path: '/content/kittens/'
+path: '/cats/kittens/'
 date: '2018-01-07'
 title: 'Kittens'
 tags: ['markdown', 'kittens', 'example']
@@ -10,6 +10,7 @@ This is an example of how you can build your site around Markdown files.
 Images referenced in Markdown are copied to the generated site, like these kittens:
 
 ![Kittens](images/kittens.jpg)
+![SLoth](https://media.giphy.com/media/KtOUnxp751Vks/giphy.gif)
 
 Finally, here's some sample code with beautiful syntax highlighting thanks to PrismJS:
 
