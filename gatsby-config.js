@@ -33,8 +33,22 @@ module.exports = {
   siteMetadata: {
     title: 'Sleeping Monster',
     author: 'Jin',
-    description: 'Personal blog about tech, life and everything in my mind',
-    siteUrl: 'https://sleepingmonster.netlify.com'
+    description: 'Personal snippets about tech, life and everything under the sun',
+    siteUrl: 'https://sleepingmonster.netlify.com',
+    menuLinks: [
+      {
+        name: 'Home',
+        link: '/'
+      },
+      {
+        name: 'About',
+        link: '/about'
+      },
+      {
+        name: 'Markdown',
+        link: '/tags/markdown'
+      }
+    ]
   },
   plugins: [
     'gatsby-plugin-typescript',

@@ -22,6 +22,10 @@ export const Layout = ({ children }: LayoutProps) => {
         siteMetadata {
           title
           description
+          menuLinks {
+            name
+            link
+          }
         }
       }
     }
@@ -43,7 +47,7 @@ export const Layout = ({ children }: LayoutProps) => {
           }
         ]}
       />
-      <Header title={data.site.siteMetadata.title} />
+      <Header title={data.site.siteMetadata.title} menuLinks={data.site.siteMetadata.menuLinks} />
       <div css={wrapper}>{children}</div>
     </main>
   )

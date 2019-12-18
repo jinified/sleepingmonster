@@ -2,11 +2,10 @@ import React from 'react'
 import styled from '@emotion/styled'
 import { css } from '@emotion/core'
 import { Link } from 'gatsby'
-import { LunrSearch } from './LunrSearch'
 
 const style = {
   container: css`
-    background: #ff5700;
+    background: #851e3e;
     margin-bottom: 1.45rem;
   `,
   wrapper: css`
@@ -34,15 +33,34 @@ const TitleLink = styled(Link)`
 
 interface HeaderProps {
   readonly title: string
+  readonly menuLinks: Array<object>
 }
 
-export const Header = ({ title }: HeaderProps) => (
+export const Header = ({ title, menuLinks }: HeaderProps) => (
   <div css={style.container}>
     <div css={style.wrapper}>
       <h1 css={style.title}>
         <TitleLink to="/">{title}</TitleLink>
       </h1>
-      <LunrSearch limit={10} />
+    </div>
+    <div>
+      <nav>
+        <ul style={{ display: 'flex', flex: 1, margin: 0 }}>
+          {menuLinks.map(link => (
+            <li
+              key={link.name}
+              style={{
+                listStyleType: `none`,
+                padding: `1rem`,
+              }}
+            >
+              <Link style={{ color: `white` }} to={link.link}>
+                {link.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </div>
   </div>
 )
